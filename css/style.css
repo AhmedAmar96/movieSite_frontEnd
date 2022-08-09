@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+.myInput{
+    border: none !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6) !important;
+    border-radius: 0px !important;
+    background-color: transparent !important;
+    text-align: start !important;
+}
+.myInput::placeholder{
+    text-align: center !important;
+}
+.bg-tWhite{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.width-s{
+    width: 60px;
+}
+.slideParent{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+.bg-black{
+    background-color: black;
+}
+.pointer{
+    cursor: pointer;
+}
+.widthSlide{
+    width: 235px;
+}
+.hov:hover{
+    color: #ff4949 !important;
+    transition: .4s;
+}
+.movieDtls{
+    position: relative;
+}
+.overLay{
+    padding: 0px 2px;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    right: 12px;
+    left: 12px;
+    transition: all 1s;
+}
+.movieDtls:hover .overLay{
+    top: 0px;
+}
+.h-larg{
+    height: 500px !important;
+}
+.ss{
+    padding: 0x;
+}
+.btn:hover{
+    background-color: #ff4949 !important;
+    color: #fff !important;
+}
+.bg-wDanger{
+    background-color: #e7afa5;
+}

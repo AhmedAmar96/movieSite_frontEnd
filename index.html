@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>Movies Exam</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="" class="bg-black">
+
+    <!-- سيكشن السلايد -->
+    <section class="slideParent d-flex h-100">
+        <!-- ديف بداخلها قائمة السلايد -->
+        <div
+            class="slideListWidth bg-black px-4 text-white fw-light widthSlide d-flex flex-column justify-content-between">
+            <div id="list" class="animate__animated">
+                <p id="nowPlaying" class="my-4"> <a href="#" class="text-decoration-none text-white my-4 ms-2 hov">Now
+                        Playing</a> </p>
+                <p id="popular" class="my-4"> <a href="#"
+                        class="text-decoration-none text-white my-4 ms-2 hov">Popular</a> </p>
+                <p id="topRated" class="my-4"> <a href="#" class="text-decoration-none text-white my-4 ms-2 hov"> Top
+                        Rated</a> </p>
+                <p id="trending" class="my-4"> <a href="#" class="text-decoration-none text-white my-4 ms-2 hov">
+                        Trending</a> </p>
+                <p id="upComing" class="my-4"> <a href="#" class="text-decoration-none text-white my-4 ms-2 hov"> Up
+                        Coming</a> </p>
+                <p id="contacUs" class="my-4"> <a href="#contactUs"
+                        class="text-decoration-none text-white my-4 ms-2 hov"> Contact Us</a> </p>
+            </div>
+            <div class="my-4">
+                <a href="https://www.facebook.com" target="_blank" class="text-white hov"><i
+                        class="fab fa-facebook-f mx-3"></i></a>
+                <a href="https://twitter.com/?lang=ar" target="_blank" class="text-white hov"><i
+                        class="fab fa-twitter mx-3"></i></a>
+                <a href="#" class="text-white hov"><i class="fas fa-globe mx-3"></i></a>
+                <p class="text-white-50 mt-3">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+        </div>
+        <!-- ديف الخاصة بالشريط الجانبي للسلايد -->
+        <div class="width-s h-100 bg-white mySlide text-center d-flex flex-column justify-content-between">
+            <div class="w-50 mx-auto">
+                <img src="./images/logo.png" class="w-100 mt-4">
+            </div>
+            <div>
+                <i class="fas fa-bars fs-2 pointer slideClick"></i>
+            </div>
+            <div>
+                <i class="fas fa-globe fs-6 d-block pointer"></i>
+                <i class="fas fa-share-alt fs-6 my-3 pointer"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- سيكشن الخاصة بالسيرش -->
+    <section class="container w-75">
+
+        <div class="row mx-auto">
+            <div class="col-md-6">
+                <input type="text" placeholder="get movies by word ..." id="searchInApi"
+                    class="form-control my-4 py-2 bg-dark text-center text-white myInput">
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="search ..." id="searchInArr"
+                    class="form-control my-4 py-2 bg-dark text-white text-center myInput">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- سيكشن لعرض الافلام -->
+    <section class="container">
+        <h1 class="text-white text-center header"></h1>
+        <div class="row my-3 ms-4 showMoviesInArr">
+        </div>
+        <div class="row my-3 ms-4 showMovies">
+        </div>
+        <div class="text-white row justify-content-center mb-5">
+            <div class="col-md-1">
+                <p id="one" class="border border-danger fs-5 text-center pointer">1</p>
+            </div>
+            <div class="col-md-1">
+                <p id="two" class="border border-danger fs-5 text-center pointer">2</p>
+            </div>
+            <div class="col-md-1">
+                <p id="three" class="border border-danger fs-5 text-center pointer">3</p>
+            </div>
+            <div class="col-md-1">
+                <p class="border border-danger fs-5 text-center pointer">4</p>
+            </div>
+            <div class="col-md-1">
+                <p class="border border-danger fs-5 text-center pointer">5</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- سيكشن لعمل فورم تسجيل -->
+    <section id="contactUs" class="container w-75">
+        <h2 class="text-white">ContacUs...</h2>
+
+        <div class="row mx-auto  my-2">
+            <div class="col-md-6">
+                <input type="text" placeholder="Enter Your Full Name" id="nameInput"
+                    class="form-control py-2 bg-dark text-white myInput inputForm">
+                <div id="nameVldMsg" class="bg-wDanger rounded d-none">
+                    <p class="text-danger px-3 py-2">enter valid name</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input type="email" placeholder="Enter Email" id="emailInput"
+                    class="form-control py-2 bg-dark text-white myInput inputForm">
+                <div id="emailVldMsg" class="bg-wDanger rounded d-none">
+                    <p class="text-danger px-3 py-2">enter valid email</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mx-auto my-2">
+            <div class="col-md-6">
+                <input type="text" placeholder="Enter Phone" id="phoneInput"
+                    class="form-control py-2 bg-dark text-white myInput inputForm">
+                <div id="phoneVldMsg" class="bg-wDanger rounded d-none">
+                    <p class="text-danger px-3 py-2">enter valid phone</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="Enter Age" id="ageInput"
+                    class="form-control py-2 bg-dark text-white myInput inputForm">
+                <div id="ageVldMsg" class="bg-wDanger rounded d-none">
+                    <p class="text-danger px-3 py-2">enter valid age *age should be between 12 to 100 years old*</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mx-auto mt-2 mb-3">
+            <div class="col-md-6">
+                <input type="password" placeholder="Enter Password" id="passInput"
+                    class="form-control py-2 bg-dark text-white myInput inputForm">
+                <div id="passVldMsg" class="bg-wDanger rounded d-none">
+                    <p class="text-danger px-3 py-2">enter valid password *Minimum 8 characters, at least one letter
+                        and one number*</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input type="password" placeholder="Enter RePassword" id="rePassInput"
+                    class="form-control py-2 bg-dark text-white myInput inputForm">
+                <div id="rePassVldMsg" class="bg-wDanger rounded d-none">
+                    <p class="text-danger px-3 py-2">password didn’t match</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <button class="btn btn-danger bg-transparent text-danger disabled">Submit</button>
+        </div>
+
+    </section>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
